@@ -89,7 +89,7 @@ const generateHTML= ({managerName,officeNumInput,managerEmail,managerID,engineer
   </body>
   </html>`;
 
-  fs.writeFile("index.html", html, "utf8", (err) => {
+  fs.writeFile("./dist/index.html", html, "utf8", (err) => {
     if(err) throw err;
     console.log("Team has been created!")
   })
