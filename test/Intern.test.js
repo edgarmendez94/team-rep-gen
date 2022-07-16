@@ -1,5 +1,7 @@
 const Intern = require("../lib/Intern");
 
+
+
 describe("Intern", () => { 
 
     it("Should give a school when typed out as constructor argument", () => {
