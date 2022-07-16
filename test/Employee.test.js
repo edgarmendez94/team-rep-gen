@@ -20,9 +20,10 @@ describe("Employee", () => {
         expect(employee.id).toEqual(id);
     });
 
+
     it("Should give a email when typed out as constructor argument", () => {
         const email = "jake21@gmail.com";
-        const employee = new Employee("jake",id,email);
+        const employee = new Employee("jake","21",email);
         expect(employee.email).toEqual(email);
     });
 
@@ -37,8 +38,8 @@ describe("Employee", () => {
     describe("getId" , () => {
         it("Should get back employee's id", () => {
             const id = "21";
-            const employee = new Employee("jake",id,email);
-            expect(employee.getId()).toEqual(email);
+            const employee = new Employee("jake",id);
+            expect(employee.getId()).toEqual(id);
         });
     });
 
@@ -53,7 +54,7 @@ describe("Employee", () => {
     describe("getRole" , () => {
         it("Should get back role of employee", () => {
             const role = "Employee";
-            const employee = new Employee("jake","21","jake21@gmail.com");
+            const employee = new Employee("jake","21","jake21@gmail.com",role);
             expect(employee.getRole()).toEqual(role);
         });
     });
